@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+.site-content {
+	margin: ($base__space-unit * 3) 175px $base__space-unit;
+	position: relative;
+
+	&:before,
+	&:after {
+		color: $color__brand-green;
+		font-family: 'FontAwesome';
+		font-size: 125px;
+		line-height: 125px;
+		position: absolute;
+		top: 0;
+	}
+
+	&:before {
+		content: '\f10d';
+		left: -175px;
+	}
+
+	&:after {
+		content: '\f10e';
+		right: -175px;
+	}
+}
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.blog,
+.single,
+.archive {
+	.entry-content {
+		p {
+			@include font-size(2.5);
+		}
+	}
+
+	.entry-meta {
+		margin-bottom: ($base__space-unit * 2);
+	}
+
+	.entry-title {
+		display: inline;
+		@include font-size(1.25);
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+
+	.source {
+		@include font-size(1.25);
+		font-style: italic;
+	}
+}
+
+/* Archives */
+
+.archive {
+	.page-title {
+		border-bottom: $base__border;
+		padding-bottom: $base__space-unit;
+	}
+
+	.hentry {
+		border-bottom: $base__border;
+	}
+}
+
+.browse-archives {
+	.post-archives,
+	.category-archives,
+	.tag-archives {
+		ul {
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+
+			li {
+				float: left;
+				@include font-size(1.25);
+				margin-bottom: $base__space-unit / 3;
+				margin-right: $base__space-unit / 2;
+			}
+		}
+	}
+}

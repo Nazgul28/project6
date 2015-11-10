@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: $color__background-body;
+	border: 2px solid $color__brand-green;
+	border-radius: 3px;
+	color: $color__brand-green;
+	@include font-size(1.25);
+	font-weight: bold;
+	line-height: 1;
+	padding: ($base__space-unit / 2) ($base__space-unit * 1.5);
+
+	&:hover,
+	&:active,
+	&:focus {
+		border-color: $color__link-hover;
+		color: $color__link-hover;
+	}
+}
+
+/* Labels */
+
+label {
+	display: block;
+	margin-bottom: $base__space-unit / 2;
+}
+
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	background-color: $color__background-body;
+	border: 2px solid $color__brand-green;
+	border-radius: 3px;
+	color: white;
+	@include font-size(1.25);
+	margin-bottom: $base__space-unit;
+	padding: ($base__space-unit / 6) ($base__space-unit / 3);
+
+	&:focus {
+		border-color: #fcfcd2;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	width: 60%;
+}
+
+textarea {
+	width: 100%;
+}
+
+/* New Quote Button */
+
+#new-quote-button {
+	display: block;
+	margin: 0 auto;
+}

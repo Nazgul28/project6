@@ -1,0 +1,30 @@
+// Structure
+
+$base__space-unit: 1.5rem;
+$base__border: 1px dotted #fff;
+
+// Colors
+
+$color__background-body: #222;
+$color__text-main: #fff;
+$color__brand-green: #00cc00;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #fff;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: $color__brand-green;
+$color__link-visited: $color__brand-green;
+$color__link-hover: darken( $color__link, 10% );
+
+// Typography
+
+$font__main: "Exo Web", sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;

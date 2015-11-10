@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/* Links */
+
+a {
+	color: $color__link;
+	text-decoration: none;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+/* Menus */
+
+.footer-navigation {
+	float: right;
+	list-style: none;
+	margin: ($base__space-unit * 3) 0 ($base__space-unit * 2);
+
+	li {
+		border-right: 1px solid white;
+		float: left;
+		line-height: 1;
+		padding: 0 round( $base__space-unit * .6667 );
+
+		&:last-child {
+			border-right: none;
+			padding-right: 0;
+		}
+	}
+}
