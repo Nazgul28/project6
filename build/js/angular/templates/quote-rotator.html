@@ -1,0 +1,18 @@
+<article>
+	<div class="entry-content">
+		<p> {{ quote.content }}</p>
+	</div>
+<!-- .entry-content -->
+	<div class="entry-meta">
+		<h2 class= "entry-title"> &mdash; {{ quote.title }}</h2>
+		<source quote="quote"></source>
+	</div>
+<!-- .entry-meta --> 
+
+<article>
+<!--$post-# -->
+<button ng-click="newRandomQuote()"
+		type="button"
+		id="new-quote-button">
+		Show Me Another!
+</button>
