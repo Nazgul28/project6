@@ -31,8 +31,8 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function(){
-    gulp.src('./js/*.js')
-      .pipe(uglify())
+    gulp.src('./js/**/*.js')
+      // .pipe(uglify())
       .pipe(rename({
         extname: '.min.js'
       }))
@@ -63,9 +63,15 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('static', function(){
+  return gulp.src('./js/angular/templates/**/*.html')
+    .pipe(gulp.dest('./build/js/angular/templates'))
+})
+
 gulp.task('watch', function() {
    gulp.watch('./sass/*.scss', ['sass']);
-   gulp.watch('./js/*.js', ['scripts']);
+   gulp.watch('./js/**/*.js', ['scripts']);
+   gulp.watch('./js/angular/templates/**/*.html', ['static']);
 });
 
 gulp.task('default', ['watch', 'browser-sync']);
