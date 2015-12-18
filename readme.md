@@ -1,4 +1,6 @@
  QUOTESONDEV - Web site built with Wordpress and AngularJS
+ 
+ -project 6 RED Academy.
 
 In this project I could mix the Wordpress CMS and the AngularJS framework in order to use the WP_REST API pluggin and fetch data on the homepage.
 
