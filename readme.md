@@ -14,11 +14,11 @@ For this purpose I approached the project using plain jQuery (main branch) and l
 
 If you're interested to see the requirements please take a look at the list below:
 
-# WordPress requirements:
+- WordPress requirements:
 
 Make use of the WP REST API (v2) plugin to satisfy functional requirements
 
-# AngularJS requirements:
+- AngularJS requirements:
 
 Create at least one Angular Directive to encapsulate the UI for displaying and fetching quotes;
 Use an external template in your Directive;
